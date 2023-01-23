@@ -1,0 +1,15 @@
+{
+    "short_name": "ScratchShark",
+    "name": "ScratchShark",
+    "icons": [
+      {
+        "src": "LOGO_Main Logo_Transparent_ScratchShark.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#45caf2",
+    "background_color": "#187adf"
+  }

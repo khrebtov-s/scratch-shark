@@ -1,0 +1,212 @@
+.content-modal {
+  justify-content: center;
+}
+
+.content-modal.enter {
+  display: flex;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translateY(-100%);
+}
+
+.content-modal.enter-active {
+  opacity: 1;
+  display: flex;
+
+  -webkit-transform: translateY(0%);
+
+  -ms-transform: translateY(0%);
+  -webkit-transform: translate3d(0, 0, 0);
+
+  transform: translateY(0%);
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.content-modal.enter-done {
+  display: flex !important;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.content-modal.exit {
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -webkit-transform: translateY(-0%);
+  -ms-transform: translateY(-0%);
+  transform: translateY(-0%);
+}
+
+.content-modal.exit-active {
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.form-modal.enter {
+  display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+  opacity: 0;
+}
+
+.form-modal.enter-active {
+  display: block;
+
+  opacity: 1;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.form-modal,
+.content-modal {
+  display: none;
+}
+
+.form-modal.exit-done {
+  display: none;
+}
+
+.form-modal.enter-done {
+  display: block;
+}
+
+.form-modal.exit {
+  display: flex;
+  opacity: 1;
+}
+
+.form-modal.exit-active {
+  display: block;
+
+  opacity: 0;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.bg-blue-gradient.full-screen.p-explorer {
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.explorer {
+  padding: 0 20px;
+  height: auto;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h2{
+    font-weight: 700;
+  }
+}
+
+.icon-checkmark {
+  position: relative;
+  padding: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.icon-settings {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.icon-cross {
+  position: absolute;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.icon-left-arrow {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.icon-search {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.ticket-explorer-wrapper {
+  width: calc(100% - 110px);
+}
+
+.header-explorer {
+  display: flex;
+  width: 100vw;
+  height: 2rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+  justify-content: center;
+  background-color: #3e75da;
+  z-index: 1;
+}
+
+.full-screen>.ticket-info-wrapper{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-height: 568px) {
+  .full-screen>.ticket-info-wrapper {
+    top: 0;
+    transform: none;
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+  margin-top: 1.2rem;
+  margin-bottom: 2.1rem;
+  position: relative;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=Terms.module.css.map */

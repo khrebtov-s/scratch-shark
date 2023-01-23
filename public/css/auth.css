@@ -1,0 +1,16 @@
+.full-screen.bg-logo {
+  background-position-y: 30%;
+}
+
+@media (max-width: 320px) {
+  .full-screen.bg-logo {
+    background-position-y: 10%;
+  }
+}
+
+@media (max-height: 400px) {
+  .full-screen.bg-logo {
+    background-position-y: 10%;
+  }
+}
+/*# sourceMappingURL=auth.css.map */

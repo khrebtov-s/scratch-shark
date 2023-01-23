@@ -1,0 +1,26 @@
+ul {
+  @media screen and (max-width: 400px) {
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+.header {
+  margin-top: 1.2rem;
+  margin-bottom: 2.1rem;
+  position: relative;
+  text-align: center;
+  h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 1rem;
+  }
+}

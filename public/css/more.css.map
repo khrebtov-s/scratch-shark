@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAC;IACP,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,IAAI;GACf",
+    "sources": [
+        "../../src/pages/More/more.scss"
+    ],
+    "names": [],
+    "file": "more.css"
+}

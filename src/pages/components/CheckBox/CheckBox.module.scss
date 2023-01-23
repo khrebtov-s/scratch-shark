@@ -1,0 +1,17 @@
+.main {
+  height: 20px;
+  position: relative;
+  top: -0.2rem;
+  margin-right: 2rem;
+  font-size: 15px;
+  font-weight: 700;
+  
+  label {
+    cursor: pointer;
+    &:before, &:after {
+      left: initial;
+      right: -1.4rem;
+      top: 0.1rem;
+    }
+  }
+}

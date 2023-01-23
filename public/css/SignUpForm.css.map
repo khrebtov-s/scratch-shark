@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACI,AAAA,IAAI,GAAG,cAAc,CAAC;EAClB,UAAU,EAAE,eAAe;EAC3B,QAAQ,EAAE,iBAAiB;CAC9B",
+    "sources": [
+        "../../src/pages/Auth/Signup/components/SignUpForm.scss"
+    ],
+    "names": [],
+    "file": "SignUpForm.css"
+}

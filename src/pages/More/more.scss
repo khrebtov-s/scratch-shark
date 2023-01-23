@@ -1,0 +1,11 @@
+@media screen and (max-width: 320px) {
+    .more-list {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .more-list-wrapper {
+        min-height: 200px;
+    }
+}

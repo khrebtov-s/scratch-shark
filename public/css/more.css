@@ -1,0 +1,8 @@
+@media screen and (max-width: 320px) {
+  .more-list {
+    position: absolute;
+    width: 90%;
+    bottom: 40vh;
+  }
+}
+/*# sourceMappingURL=more.css.map */

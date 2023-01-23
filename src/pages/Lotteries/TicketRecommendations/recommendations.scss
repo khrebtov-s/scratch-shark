@@ -1,0 +1,388 @@
+body,
+html,
+#root {
+  overflow: auto;
+}
+
+.p-rt {
+  display: flex;
+  height: auto !important;
+  padding: 34px 24px 0;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+.r-ticket {
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem 0rem;
+  justify-content: space-evenly;
+  max-height: 500px;
+
+  .img-ticket {
+    flex-basis: 67%;
+    height: 60%;
+    width: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .flex-between-w100 {
+    flex-basis: 15%;
+
+    h3 {
+      margin: 0;
+      margin-top: 3vh;
+    }
+  }
+}
+
+#best-container {
+  width: 330px;
+  flex-grow: 1;
+}
+
+:root {
+  --ticketHeight: 500px;
+}
+
+.block2:before {
+  background-image: url('../../../img/LOGO_Main\ Logo_Transparent_ScratchShark.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25vh;
+}
+
+.block1,
+.block2 {
+  width: 100%;
+  max-width: 330px;
+  position: absolute;
+  top: 0;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.icon-oval.jackpot:after {
+  content: '';
+  background-image: url('../../../img/SVG/no_jackpots.svg');
+}
+
+.new-ticket-guide {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0px 10px 0px 0;
+  overflow: hidden;
+}
+
+.new-ticket-guide::before {
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  top: -10%;
+  right: -45%;
+  width: 81px;
+  height: 38px;
+  padding-top: 1.2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: 'NEW';
+  color: #a1ecc8;
+  background-color: #02ad58;
+}
+
+.nojackpot-ticket-guide {
+  background-image: url('../../../img/SVG/no_jackpots.svg');
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.buyx-ticket-guide {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  h2 {
+    height: 40px;
+    transform: translateY(-10%);
+  }
+}
+
+.slider {
+  position: relative;
+  height: 508px;
+  align-self: center;
+  width: 100%;
+  max-width: 323px;
+}
+
+.details-wrapper {
+  align-self: center;
+}
+
+.best-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 0;
+  height: 2rem;
+}
+
+.white {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.table-wrapper {
+  overflow: scroll;
+  padding-left: 5px;
+}
+
+.slider,
+.ticket-info-wrapper {
+  max-height: 508px;
+  height: calc(100vh - 130px);
+  min-height: 412px;
+  min-width: 260px;
+
+  .modal-select li {
+    font-size: 13px;
+  }
+}
+
+.wrapper-btn button {
+  margin: 0;
+}
+
+.ticket-rank {
+  max-height: 110px;
+  height: 18vh;
+  min-height: 99px;
+}
+
+.ticket-cover {
+  width: 100%;
+  max-height: 215px;
+  height: 32vh;
+  min-height: 175px;
+}
+
+.wrapper-btn {
+  max-height: 86px;
+  min-height: 70px;
+  height: 13.5vh;
+}
+
+.ticket-details {
+  overflow: hidden;
+  height: 100%;
+}
+
+.s-ticket {
+  position: relative;
+}
+
+.triangle-x2,
+.down,
+.triangle-notJackpot {
+  position: absolute;
+  top: auto;
+}
+
+.triangle-x2,
+.triangle-notJackpot {
+  bottom: 155px;
+}
+
+.down {
+  bottom: 172px;
+  width: 100%;
+}
+
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 78px;
+  width: calc(31% - 12px);
+  max-width: 114px;
+  z-index: 9;
+}
+
+.position-left {
+  left: 24px;
+}
+
+.position-right {
+  right: 24px;
+}
+
+.header .header-back {
+  position: relative;
+  padding-left: 8px;
+  left: 0;
+
+  .icon-left-arrow {
+    position: absolute;
+
+    &:before {
+      left: -5px;
+    }
+  }
+
+  p {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-height: 640px) {
+  .modal-select li {
+    font-size: 13px;
+  }
+}
+
+@media (max-height: 635px) {
+  .table-wrapper {
+    max-height: 412px;
+  }
+}
+
+@media (max-height: 605px) {
+  .triangle-x2,
+  .triangle-notJackpot {
+    top: 296px;
+  }
+
+  .down {
+    top: 144px;
+  }
+
+  .table-wrapper {
+    max-height: 385px;
+  }
+}
+
+@media (max-height: 585px) {
+  .table-wrapper {
+    max-height: 362px;
+  }
+}
+
+@media (max-height: 568px) {
+  .modal-details {
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .table-wrapper {
+    max-height: 488px;
+    height: 488px !important;
+  }
+}
+
+@media (max-height: 555px) {
+  .table-wrapper {
+    max-height: 462px;
+  }
+}
+
+@media (max-height: 530px) {
+  .table-wrapper {
+    max-height: 438px;
+  }
+}
+
+@media (max-height: 505px) {
+  .table-wrapper {
+    max-height: 412px;
+  }
+}
+
+@media (max-height: 480px) {
+  .table-wrapper {
+    max-height: 388px;
+  }
+}
+
+@media (max-height: 460px) {
+  .table-wrapper {
+    max-height: 362px;
+  }
+}
+
+@media (max-height: 440px) {
+  .table-wrapper {
+    max-height: 340px;
+  }
+}
+
+@media (max-height: 420px) {
+  .table-wrapper {
+    max-height: 312px;
+  }
+}
+
+@media (max-width: 350px) {
+  #best-container {
+    width: 100%;
+  }
+
+  .block1:before,
+  .block2:before {
+    display: none;
+  }
+
+  .a-prev-wrapper,
+  .a-next-wrapper {
+    width: 115px;
+    height: 115px;
+
+    span {
+      top: 46px;
+    }
+  }
+
+  .a-prev-wrapper span {
+    right: 10px;
+
+    &:before {
+      left: 10px;
+    }
+  }
+
+  .a-next-wrapper span {
+    left: 10px;
+
+    &:before {
+      left: 18px;
+    }
+  }
+}

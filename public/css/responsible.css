@@ -1,0 +1,60 @@
+.rp-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rp-body {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  padding-bottom: 0vh;
+}
+
+.responsible-container > .pos-bottom-4p {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.responsible-container > .pos-bottom-4p button {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 780px) {
+  .responsible-container > .pos-bottom-4p {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .rp-block > .img > img {
+    width: 100%;
+  }
+}
+
+.rp-block p {
+  width: 100vw;
+}
+
+@media (max-height: 500px) {
+  .responsible-container > .pos-bottom-4p {
+    position: static;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+
+@media screen and (max-height: 430px) and (orientation: portrait) {
+  .rp-block > .img {
+    height: 150px;
+  }
+  .rp-body {
+    padding-top: 12vh;
+  }
+}
+/*# sourceMappingURL=responsible.css.map */

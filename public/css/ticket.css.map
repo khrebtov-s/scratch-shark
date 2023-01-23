@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC,OAAO,CAAC,WAAW,CAAC;EAChC,SAAS,EAAE,gBAAgB;EAC3B,UAAU,EAAE,gBAAgB;EAC5B,KAAK,EAAE,cAAc;CACtB;;AAED,AAAA,aAAa,CAAC,OAAO,CAAC;EACpB,MAAM,EAAE,gBAAgB;CACzB;;AAED,AAAA,SAAS,CAAC;EACR,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CACd;;AAED,AAAA,cAAc,CAAC;EACb,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,OAAO,AAAA,UAAW,CAAA,CAAC,EAAE;EACnB,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "../../src/pages/Lotteries/TicketExplorer/components/ticket.scss"
+    ],
+    "names": [],
+    "file": "ticket.css"
+}

@@ -1,0 +1,173 @@
+@media (min-width: 375px) {
+  .r-ticket h2 {
+    font-size: 4vh;
+    white-space: pre-wrap;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .r-ticket h2 {
+    line-height: 1;
+    font-size: 4vh !important;
+    white-space: pre-wrap;
+  }
+}
+
+@media (min-height: 600px) {
+  .r-ticket h2 {
+    font-size: 3vh !important;
+    white-space: pre-wrap;
+    line-height: 1;
+  }
+}
+
+.r-ticket {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5rem 1rem 0rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-height: 500px;
+}
+
+.r-ticket .img-ticket {
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
+  height: 60%;
+  width: 100%;
+}
+
+.r-ticket .img-ticket img {
+  height: 100%;
+}
+
+.r-ticket h2 {
+  margin: 0;
+}
+
+.r-ticket .flex-between-w100 {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.r-ticket .flex-between-w100 h3 {
+  margin: 0;
+  margin-top: 3vh;
+}
+
+@media (min-width: 960px) {
+  .r-ticket {
+    max-height: 500px;
+    height: 70vh;
+  }
+  .r-ticket .img-ticket {
+    height: 50%;
+  }
+  .r-ticket .img-ticket img {
+    height: 100%;
+  }
+}
+
+#best-container {
+  width: 330px;
+}
+
+:root {
+  --ticketHeight: 500px;
+}
+
+.block2:before {
+  background-image: url("../../../img/LOGO_Main Logo_Transparent_ScratchShark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25vh;
+}
+
+.block1,
+.block2 {
+  width: 100%;
+  max-width: 330px;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.icon-oval.jackpot:after {
+  content: '';
+  background-image: url("../../../img/SVG/no_jackpots.svg");
+}
+
+.new-ticket-guide {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0px 10px 0px 0;
+  overflow: hidden;
+}
+
+.new-ticket-guide::before {
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  top: -10%;
+  right: -45%;
+  width: 81px;
+  height: 38px;
+  padding-top: 1.2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: 'NEW';
+  color: #a1ecc8;
+  background-color: #02ad58;
+}
+
+.nojackpot-ticket-guide {
+  background-image: url("../../../img/SVG/no_jackpots.svg");
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+}
+
+.buyx-ticket-guide {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.buyx-ticket-guide h2 {
+  height: 40px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+/*# sourceMappingURL=recommendations.css.map */
